@@ -1,0 +1,5 @@
+Muzammil Afzal is a seasoned MERN stack developer known for building robust web applications.
+ With expertise in React.js, Node.js, and MongoDB, he excels in creating seamless user experiences.
+  Muzammil's diverse project portfolio includes e-commerce platforms and social networking apps. 
+  He actively contributes to open source, believes in lifelong learning, and stays ahead of industry trends.
+   Connect with Muzammil on GitHub and LinkedIn.
