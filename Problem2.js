@@ -2,20 +2,19 @@
 
 const axios = require('axios');
 
+  const apiEndpoint = 'https://jsonplaceholder.typicode.com/users/10';
+
 async function fetchDataFromApi(apiEndpoint) {
   try {
-    const response = await axios.get(apiEndpoint);
-
-
-
+             const response = await axios.get(apiEndpoint);
 
 
     if (response.status >= 200 && response.status < 300) {
       return response.data;
     } else {
-      console.error(`Unexpected status code: ${response.status}`);
+        console.error(`Unexpected status code: ${response.status}`);
 
-      throw new Error('Unexpected status code');
+        throw new Error('Unexpected status code');
     }
   } catch (error) {
     if (error.response) {
@@ -40,9 +39,6 @@ async function fetchDataFromApi(apiEndpoint) {
     }
   }
 }
-
-// Example usage
-const apiEndpoint = 'https://jsonplaceholder.typicode.com/users/10';
 
 fetchDataFromApi(apiEndpoint)
   .then((data) => {
